@@ -9,7 +9,7 @@ function Home() {
   const fatchMovies = async (quary) => {
     setLoading(true);
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=15eb6af2&s=${quary}`,
+      `https://www.omdbapi.com/?apikey=15eb6af2&s=${quary}`,
     );
     const data = await res.json();
     console.log(data);
