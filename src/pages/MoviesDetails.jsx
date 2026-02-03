@@ -8,7 +8,7 @@ function MoviesDetails() {
   useEffect(() => {
     async function getMaovies() {
       const results = await fetch(
-        `http://www.omdbapi.com/?apikey=15eb6af2&i=${id}`,
+        `https://www.omdbapi.com/?apikey=15eb6af2&i=${id}`,
       );
       const data = await results.json();
       setMovie(data);
